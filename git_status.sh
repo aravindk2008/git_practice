@@ -1,6 +1,6 @@
 echo "---git repository statistics--"
 echo "1.total number of commits:"
-git rev-list --count HEAD.
+git rev-list --count HEAD
 echo "2.number of commits per author"
 git log --format=%an | sort | uniq -c | sort -rn
 echo "3.the recently modified files"
