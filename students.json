@@ -1,0 +1,22 @@
+[
+  {
+    "name": "vic",
+    "roll": "11",
+    "gpa": 8.5
+  },
+  {
+    "name": "rock",
+    "roll": "12",
+    "gpa": 9.2
+  },
+  {
+    "name": "Ravi",
+    "roll": 101,
+    "gpa": 8.7
+  },
+  {
+    "name": "Priya",
+    "roll": 102,
+    "gpa": 9.2
+  }
+]
