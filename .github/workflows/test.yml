@@ -1,0 +1,19 @@
+name: Test Custom Action
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Custom Verilator Action
+        uses: aravindk2008/verilator-lint-action@v1
+        with:
+          files: "alu.sv counter.sv"
+          severity: warning
