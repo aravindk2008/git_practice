@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-FILES=`ls`
-echo $FILES
+FILES=$(ls)
+echo "$FILES"
 
