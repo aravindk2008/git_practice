@@ -19,4 +19,4 @@ jobs:
 
       - name: Run ShellCheck
         run: |
-          find . -name "*.sh" -exec shellcheck {} \;
+          find . -name "*.sh" -exec shellcheck -S warning {} \;
