@@ -1,22 +1,14 @@
-name: ShellCheck
-
+name: Shell Lint
 on:
   push:
   pull_request:
-
 jobs:
   lint:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Install ShellCheck
-        run: |
-          sudo apt update
-          sudo apt install -y shellcheck
-
-      - name: Run ShellCheck
-        run: |
-          find . -name "*.sh" -exec shellcheck -S warning {} \;
+      - name: Install shellcheck
+        run: sudo apt update && sudo apt install -y shellcheck
+      - name: Run shellcheck
+        run: shellcheck *.sh
